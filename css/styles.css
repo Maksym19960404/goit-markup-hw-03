@@ -63,6 +63,10 @@
 .site-nav-link:focus {
   color: var(--accent-text-color);
 }
+
+.current {
+  color: var(--accent-text-color);
+}
 .color:visited {
   color: var(--accent-text-color);
 }
