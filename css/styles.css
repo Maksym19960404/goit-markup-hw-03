@@ -41,6 +41,8 @@ html {
   padding-right: 15px;
   margin-left: auto;
   margin-right: auto;
+
+  outline: 2px solid tomato;
 }
 
 .underline {
@@ -73,12 +75,15 @@ current img {
 }
 
 /*---------ШАПКА ПРОФІЛЯ--------*/
-.header {
-  display: inline;
+
+.header-container{
+  display: flex;
+  align-items: center;
 }
 
-.navigation {
+.main-nav{
   display: flex;
+  align-items: center;
 }
 
 .logo {
@@ -94,10 +99,20 @@ current img {
   color: var(--primary-text-color);
 }
 
-.contacts-item {
+.site-nav{
+  display: flex;
+  margin-left: 93px;
+}
+
+.site-nav-item + .site-nav-item{
+  margin-left: 50px;
 }
 
 .site-nav-link {
+  display: block;
+  padding-top: 15px;
+  padding-bottom: 15px;
+
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
@@ -117,7 +132,20 @@ current img {
   color: var(--accent-text-color);
 }
 
+.contacts{
+  display: flex;
+  margin-left: auto;
+}
+
+.contacts-item + .contacts-item {
+  margin-left: 50px;
+}
+
 .contacts-links {
+  display: block;
+  padding-top: 15px;
+  padding-bottom: 15px;
+
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
@@ -319,12 +347,30 @@ current img {
 
 /*--------СЕКЦІЯ ПОРТФОЛІО--------*/
 
-.portfolio {
+
+
+.portfolio{
+  display: flex;
+  flex-wrap: wrap;
 }
 
-.portfolio-card {
+.portfolio-card{
+  margin-right: 30px;
+  margin-bottom: 30px;
 }
 
+.portfolio-card:nth-child(3n){
+  margin-right: 0;
+}
+
+.portfolio-card:nth-last-child(-n + 3){
+  margin-bottom: 0;
+}
+
+
+.portfolio{
+  
+}
 .portfolio-img {
 }
 
