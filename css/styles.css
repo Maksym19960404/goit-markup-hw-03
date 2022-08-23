@@ -8,14 +8,26 @@
   --main-font: "Roboto", sans-serif;
 }
 
-html {
-  box-sizing: border-box;
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin-top: 0;
+  margin-bottom: 0;
 }
 
-*,
-*::before,
-*::after {
-  box-sizing: inherit;
+ul,
+ol {
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-left: 0;
+}
+
+html {
+  box-sizing: border-box;
 }
 
 .body {
@@ -34,10 +46,18 @@ html {
 .underline {
   text-decoration: none;
 }
-.style {
+.list {
   list-style: none;
+  margin: 0;
+  padding: 0;
 }
-
+current img {
+  display: block;
+}
+.link {
+  text-decoration: none;
+  color: currentColor;
+}
 .visually-hidden {
   position: absolute;
   width: 1px;
@@ -62,7 +82,7 @@ html {
 }
 
 .logo {
-  font-family: "Raleway";
+  font-family: "Raleway", sans-serif;
   font-weight: 700;
   font-size: 26px;
   line-height: 1.2;
@@ -118,6 +138,8 @@ html {
 }
 
 .hero-title {
+  margin-bottom: 30px;
+
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
@@ -128,7 +150,10 @@ html {
 }
 
 .hero-button {
+  width: 217px;
+  min-height: 50px;
   padding: 10px 32px;
+
   font-weight: 700;
   font-size: 16px;
   line-height: 1.87;
@@ -147,9 +172,12 @@ html {
 /*-----------ОСОБЛИВОСТІ----------*/
 .features {
   display: flex;
+  margin: 0;
 }
 
 .features-title {
+  margin-bottom: 10px;
+
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
@@ -173,6 +201,8 @@ html {
 }
 /*--------КОМАНДА ПРАЦІВНИКІВ-----*/
 .heading {
+  margin-bottom: 50px;
+
   font-weight: 700;
   font-size: 36px;
   line-height: 1.16;
@@ -192,6 +222,7 @@ html {
 }
 
 .staff-title {
+  margin-bottom: 10px;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.2;
@@ -211,7 +242,17 @@ html {
   background: var(--background-color);
 }
 
-.footer-logo {
+.logo-footer {
+  font-family: "Raleway", sans-serif;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.2;
+  letter-spacing: 0.03em;
+  color: var(--accent-text-color);
+  /*display: inline-block;*/
+}
+
+.white-logo {
   color: var(--primary-white-color);
 }
 
@@ -224,6 +265,7 @@ html {
 }
 
 .address-item {
+  margin-bottom: 9px;
 }
 
 .address-link {
@@ -237,19 +279,28 @@ html {
   color: var(--accent-text-color);
 }
 
-.address-social {
+.contacts-links-footer {
   font-size: 14px;
   line-height: 1.71;
   color: rgba(255, 255, 255, 0.6);
 }
 
-.address-social:hover,
-.address-social:focus {
+.contacts-links-footer:hover,
+.contacts-links-footer:focus {
   color: var(--accent-text-color);
 }
 
+.footer-social {
+  margin-bottom: 9px;
+}
+
 /*-------Секція з кнопками------*/
+.buttons {
+}
+
 .button-text {
+  padding: 6px 25px;
+
   font-weight: 500;
   font-size: 16px;
   line-height: 1.62;
@@ -279,6 +330,8 @@ html {
 
 /*---------СЕКЦІЯ ПОРТФОЛІО--------*/
 .portfolio-title {
+  margin-bottom: 4px;
+
   font-weight: 700;
   font-size: 18px;
   line-height: 2;
