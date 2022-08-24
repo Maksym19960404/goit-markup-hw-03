@@ -41,8 +41,6 @@ html {
   padding-right: 15px;
   margin-left: auto;
   margin-right: auto;
-
-  outline: 2px solid tomato;
 }
 
 .underline {
@@ -74,7 +72,17 @@ current img {
   overflow: hidden;
 }
 
+.section{
+  padding-bottom: 94px;
+}
+
 /*---------ШАПКА ПРОФІЛЯ--------*/
+.header{
+  padding-top: 32px;
+  padding-bottom: 32px;
+  border: 1px solid #ECECEC;
+}
+
 
 .header-container{
   display: flex;
@@ -178,7 +186,11 @@ current img {
 }
 
 .hero-button {
-  width: 217px;
+display: block;
+margin-left: auto;
+margin-right: auto;
+
+  max-width: 217px;
   min-height: 50px;
   padding: 10px 32px;
 
@@ -198,7 +210,7 @@ current img {
 }
 
 /*-----------ОСОБЛИВОСТІ----------*/
-.features {
+.features-list {
   display: flex;
   margin: 0;
 }
@@ -331,8 +343,15 @@ current img {
   margin-bottom: 9px;
 }
 
-/*-------Секція з кнопками------*/
+/*-------Секція з кнопками PORTFOLIO-----*/
 .buttons {
+  margin-bottom: 34px;
+}
+
+.button-list{
+  display: flex;
+  justify-content: center;
+  gap: 8px;
 }
 
 .button-text {
