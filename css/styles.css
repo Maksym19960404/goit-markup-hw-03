@@ -54,6 +54,7 @@ html {
  img {
   display: block;
   max-width: 100%;
+  height: auto;
 }
 .link {
   text-decoration: none;
@@ -79,13 +80,11 @@ html {
 }
 
 .section-about{
-  margin-bottom: 94px;
+  padding-top: 0;
 }
 
 /*---------ШАПКА ПРОФІЛЯ--------*/
 .header{
-  padding-top: 32px;
-  padding-bottom: 32px;
   border: 1px solid #ECECEC;
 }
 
@@ -124,8 +123,8 @@ html {
 
 .site-nav-link {
   display: block;
-  padding-top: 15px;
-  padding-bottom: 15px;
+  padding-top: 32px;
+  padding-bottom: 32px;
 
   font-weight: 500;
   font-size: 14px;
@@ -157,8 +156,8 @@ html {
 
 .contacts-links {
   display: block;
-  padding-top: 15px;
-  padding-bottom: 15px;
+  padding-top: 32px;
+  padding-bottom: 32px;
 
   font-weight: 500;
   font-size: 14px;
@@ -222,6 +221,7 @@ margin-right: auto;
 
 /*-----------ОСОБЛИВОСТІ----------*/
 .features-list {
+  gap: 30px;
   display: flex;
   margin: 0;
 }
@@ -278,14 +278,14 @@ margin-right: auto;
 }
 
 .staff-item{
+  background-color: var(--primary-white-color);
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 0px 0px 4px 4px;
 }
 
 .staff-list-content{
-  margin-top: 30px;
-  margin-bottom: 30px;
-}
+padding-top: 30px;
+padding-bottom: 30px;}
 
 .staff-title {
   margin-bottom: 10px;
@@ -331,11 +331,10 @@ margin-right: auto;
 
 
 /*-------Секція з кнопками PORTFOLIO-----*/
-.buttons {
-}
+
 
 .button-list{
-margin-bottom: 34px;
+margin-bottom: 50px;
 
   display: flex;
   justify-content: center;
